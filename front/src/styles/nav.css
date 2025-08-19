@@ -1,0 +1,273 @@
+/* Bannière en haut de la page */
+.top_banner {
+    background-color: #f8f9fa; /* Couleur d'arrière-plan gris clair */
+    padding: 1px 0; /* Espacement accru pour un meilleur aspect */
+    text-align: center; /* Centrer le texte */
+    margin: 0 auto; /* Centrer horizontalement */
+    margin-top: -10px; /* Pour remonter légèrement la bannière */
+    width: calc(100% - 250px); /* Prend tout l'espace à côté de la barre latérale */
+    position: fixed; /* Fixer la bannière en haut de la page */
+    z-index: 999; /* Assure que la bannière est visible au-dessus des autres éléments */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Ombre plus douce pour plus de profondeur */
+    left: 50%; /* Décale à 50% de la largeur de la page */
+    transform: translateX(-50%); /* Centre la bannière en la ramenant à gauche de 50% de sa propre largeur */
+    display: flex; /* Utilisation de Flexbox pour l'alignement */
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+/* Titre de la bannière */
+.top_banner h2 {
+    font-size: 25px; /* Taille modérée pour une visibilité et impact visuel */
+    font-family: 'Arial', sans-serif; /* Police cohérente */
+    color: #0055ff; /* Couleur du texte en bleu */
+    margin: 0; /* Retire les marges */
+    padding: 10px 0; /* Ajoute un espacement en haut et en bas du texte */
+    letter-spacing: 1.2px; /* Espacement entre les lettres pour un style élégant */
+    font-weight: 600; /* Texte en gras modéré */
+    border-bottom: 3px solid rgba(0, 85, 255, 0.7); /* Bordure en bas avec une teinte bleue */
+    display: inline-block; /* Assure que la bordure reste alignée avec la longueur du texte */
+    width: auto; /* Gère la taille dynamique selon le contenu */
+    transition: border-color 0.3s ease; /* Animation de transition subtile */
+    padding-left: 9px; /* Ajoute un espacement interne à gauche pour décaler légèrement le texte */
+}
+
+.top_banner h2:hover {
+    border-bottom-color: #003399; /* Changement de couleur au survol pour un effet interactif */
+}
+
+
+
+/* Barre latérale */
+.header {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre horizontalement tous les éléments */
+    background-color: #003366; /* Couleur de fond */
+    padding: 15px; /* Espacement intérieur */
+    position: fixed;
+    top: 0px;
+    width: 250px; /* Largeur de la barre latérale */
+    height: 100%; /* Prend toute la hauteur de la fenêtre */
+    z-index: 1000; /* Priorité sur d'autres éléments */
+    box-shadow: 5px 0 1200px rgba(0, 0, 0, 0.7); /* Effet de profondeur plus intense */
+    border-radius: 0 20px 30px 0; /* Coins arrondis plus doux à droite */
+    transition: all 0.5s ease-in-out; /* Transition douce pour les changements d'état */
+    overflow: hidden; /* Cache le débordement visuel */
+}
+
+.header:hover {
+    box-shadow: 10px 0 1200px rgba(0, 0, 0, 0.9); /* Accentuation de l'ombre au survol */
+    transform: scale(1.03); /* Agrandissement subtil au survol */
+    background-color: #004080; /* Légère variation de la couleur de fond au survol */
+}
+
+.header .logo img {
+    width: 80px; /* Taille de l'image du logo */
+    height: auto;
+    border-radius: 50%; /* Logo rond */
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .logo img:hover {
+    transform: rotate(360deg); /* Rotation à 360° au survol du logo */
+}
+
+.header nav ul {
+    margin-top: 30px;
+    width: 100%; /* S'étend sur toute la largeur disponible */
+}
+
+.header nav ul li {
+    list-style: none;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.header nav ul li a:hover {
+    color: #00ace6; /* Couleur de survol */
+    background-color: rgba(255, 255, 255, 0.1); /* Légère teinte de fond au survol */
+    transform: translateX(10px); /* Lien se déplace légèrement vers la droite au survol */
+}
+
+.header .map-button button {
+    background-color: #0073e6; /* Couleur du bouton de la carte */
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px; /* Bouton rond */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header .map-button button:hover {
+    background-color: #005bb5; /* Couleur de survol */
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+
+/* Section du logo */
+.logo {
+    margin-bottom: 20px; /* Espace supplémentaire sous le logo */
+    display: flex;
+    justify-content: center; /* Centre le logo horizontalement */
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.logo img {
+    height: 100px; /* Taille du logo */
+    max-width: 100%; /* Empêche le logo de dépasser la largeur de son conteneur */
+    transition: transform 0.3s; /* Transition douce pour l'effet au survol */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Augmentation légère de la taille au survol */
+}
+
+/* Navigation */
+.navigation {
+    flex-grow: 1; /* Prend tout l'espace disponible */
+    width: 100%; /* Occupe toute la largeur de la barre latérale */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin-bottom: 15px; /* Espace entre les éléments de navigation */
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+/* Navigation */
+.navigation a {
+    color: #ffffff; /* Couleur des liens */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le texte à l'intérieur */
+    padding: 12px 24px; /* Espacement interne légèrement augmenté pour un meilleur confort */
+    border-radius: 50px; /* Coins arrondis modernes */
+    background-color: #003366; /* Couleur de fond initiale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Ombre douce, plus subtile et moderne */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition fluide pour toutes les propriétés */
+}
+
+/* Effet au survol */
+.navigation a:hover {
+    background-color: #ffffff; /* Couleur de fond claire au survol */
+    color: #003366; /* Change la couleur du texte lors du survol */
+    transform: translateY(-3px); /* Légère remontée pour un effet d'élévation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus nette au survol pour un effet de profondeur */
+}
+
+
+/* Déconnexion */
+/* Déconnexion alignée à droite */
+.logout {
+    display: flex;
+    justify-content: flex-end; /* Aligne à l'extrême droite */
+    padding: 15px; /* Espacement autour du lien de déconnexion */
+    width: 100%; /* Prend toute la largeur */
+    margin-left: 600px;
+}
+
+.link {
+    color: #ffffff; /* Couleur du lien */
+    text-decoration: none; /* Retire le soulignement */
+    display: flex;
+    align-items: center;
+}
+
+.link:hover {
+    color: white; /* Couleur de survol */
+    font-weight: bold; /* Texte en gras au survol */
+}
+.logos {
+    display: flex;
+    margin-top: 10px;  /* Espace au-dessus du logo (facultatif) */
+    margin-right: -350px;
+}
+
+/* Footer */
+.right {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: flex-start; /* Aligne les éléments à gauche pour une meilleure lisibilité */
+    background: #1f2937; /* Couleur de fond sombre mais moderne */
+    padding: 20px; /* Espacement intérieur accru pour une meilleure expérience utilisateur */
+    position: fixed;
+    bottom: 0; /* Positionne le footer en bas de la fenêtre */
+    top: 115px; /* Ajustez cette valeur pour réduire la longueur de la boîte */
+    right: -5px;
+    width: 250px; /* Largeur de la barre latérale */
+    max-height: calc(33.5% - 10px); /* Limite la hauteur maximale du footer */
+    z-index: 1000; /* Priorité sur d'autres éléments */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Effet de profondeur amélioré */
+    border-radius: 15px; /* Coins arrondis pour un aspect plus moderne */
+    list-style-type: none; /* Supprime les puces des éléments de la liste */
+}
+
+.right li {
+    display: flex; /* Utiliser flex pour centrer l'icône et le texte */
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    margin: 15px 0; /* Ajoute de l'espace entre les éléments */
+    transition: background 0.3s; /* Ajoute une transition pour un effet au survol */
+}
+
+.right li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Ajoute un effet de survol */
+    border-radius: 10px; /* Coins arrondis lors du survol */
+}
+
+.right li a {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: #38bdf8; /* Couleur du texte attractive */
+    font-size: 18px; /* Ajustez la taille de la police si nécessaire */
+    padding: 10px; /* Espacement autour du texte */
+    width: 100%; /* Permet au lien de remplir tout l'élément */
+    display: flex; /* Utiliser flex pour centrer l'icône et le texte */
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+}
+
+.right li a svg {
+    width: 30px; /* Taille d'icône réduite pour un look plus propre */
+    height: 30px; /* Taille d'icône réduite pour un look plus propre */
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.bottom-links {
+    margin-top: auto; /* Pousse les liens vers le bas */
+}
+/* Dans nav.css */
+.icon-large {
+    font-size: 1.5rem; /* Taille souhaitée */
+}
+
+/* Dans nav.css */
+.border-b {
+    border-bottom-width: 1px; /* Épaisseur de la bordure */
+}
+.my-4 {
+    margin-top: 1rem; /* Ajuster la marge supérieure */
+    margin-bottom: 1rem; /* Ajuster la marge inférieure */
+}
+
+

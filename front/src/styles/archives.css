@@ -1,0 +1,219 @@
+.archive-container {
+    padding: 20px;
+    max-width: 900px; /* Augmentation de la largeur pour plus d'espace */
+    margin: 150px auto; /* Ajout de marge en haut pour aérer */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pour que padding et width s'ajustent bien */
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.search-container {
+    position: relative; /* Position relative pour placer l'icône */
+    width: 100%;
+}
+
+.search-bar {
+    padding: 12px 40px; /* Augmentez le rembourrage à droite pour faire de la place à l'icône */
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute; /* Positionnez l'icône à l'intérieur de l'input */
+    left: 10px; /* Ajustez la position à gauche */
+    top: 50%; /* Centrez verticalement */
+    transform: translateY(-50%); /* Ajustez le centrage vertical */
+    color: #aaa; /* Couleur de l'icône */
+    pointer-events: none; /* L'icône ne doit pas interférer avec les clics */
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-bar:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.error {
+    color: #ff0000;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+}
+
+.success {
+    color: #008000;
+    background-color: #e6ffe6;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #008000;
+    border-radius: 4px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal h3 {
+    margin-top: 0;
+}
+
+.modal img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.modal button {
+    margin-top: 10px;
+    background-color: #d9534f;
+}
+
+.modal button:hover {
+    background-color: #c9302c;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.read-button {
+    padding: 12px 18px;
+    background-color: #0057f7; /* Couleur du bouton Lire */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.read-button:hover {
+    background-color: #0044cc; /* Couleur au survol du bouton Lire */
+}
+
+.edit-button {
+    padding: 12px 18px;
+    background-color: blue; /* Couleur du bouton Modifier */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: darkblue; /* Couleur au survol du bouton Modifier */
+}
+
+.chart-container {
+    width: 100%; /* Ajustez selon vos besoins, par exemple 100% pour pleine largeur */
+    max-width: 600px; /* Limiter la largeur maximale */
+    height: 300px; /* Ajuster la hauteur */
+    margin: 0 auto; /* Centrer le diagramme */
+}
+

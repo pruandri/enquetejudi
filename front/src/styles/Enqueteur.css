@@ -1,0 +1,84 @@
+/* Style de la table */
+.enqueteur-container {
+    padding: 20px;
+    max-width: 900px; /* Augmentation de la largeur pour plus d'espace */
+    margin: 150px auto; /* Ajout de marge en haut pour aérer */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    border-radius: 8px; /* Coins arrondis */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style des boutons */
+button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #005f7f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004b63;
+}
+
+/* Style des champs du formulaire */
+input {
+    width: 100%;  /* Le champ prend 100% de la largeur disponible */
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box; /* Assurez-vous que la bordure et le padding sont inclus dans la taille */
+}
+
+/* Conteneur du formulaire pour ajuster sa taille */
+.form-container {
+    max-width: 600px;  /* Taille maximale du formulaire */
+    margin: 20px auto;  /* Centrage horizontal */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style des titres et texte */
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box button {
+    margin: 0 5px;
+    padding: 5px 10px;
+}

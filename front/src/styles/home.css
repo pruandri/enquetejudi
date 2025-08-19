@@ -1,0 +1,95 @@
+/* Section About avec un espacement supplémentaire vers le bas */
+.about {
+    margin-top: 35px; /* Espace au-dessus pour décaler l'élément vers le bas */
+    text-align: center; /* Centre le contenu horizontalement */
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px; /* Espacement supplémentaire en bas */
+     font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Box pour une carte avec ombrage et arrondi */
+.box {
+    background-color: #ffffff; /* Couleur d'arrière-plan du conteneur */
+    padding: 30px; /* Espacement interne accru pour une sensation d'air */
+    border-radius: 12px; /* Coins arrondis pour un design plus doux */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre pour effet de profondeur */
+    width: 300px; /* Ajuste la largeur de la box */
+    text-align: center;
+    transition: transform 0.3s; /* Transition lors du survol */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Effet de levage au survol */
+}
+
+/* Style de l'icône dans la box */
+.icon {
+    font-size: 40px; /* Taille de l'icône */
+    color: #007bff; /* Couleur bleue pour l'icône */
+    margin-bottom: 15px; /* Espacement entre l'icône et le titre */
+}
+
+/* Style pour les titres */
+h5 {
+    font-size: 22px; /* Taille du titre */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style pour la barre de recherche */
+.search-container {
+    margin: 120px auto; /* Espace autour et centré horizontalement */
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    width: 80%; /* Largeur ajustée pour occuper 80% de la largeur disponible */
+}
+
+.search-container input {
+    padding: 12px; /* Espacement interne */
+    border: 1px solid #007bff; /* Bordure bleue */
+    border-radius: 25px; /* Coins arrondis */
+    flex: 1; /* Prend toute la largeur disponible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition pour les effets de focus */
+}
+
+.search-container input:focus {
+    border-color: #0056b3; /* Couleur lors du focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Effet d'ombre au focus */
+}
+
+/* Style pour l'icône de recherche */
+.search-icon {
+    margin-left: 10px; /* Espacement entre l'input et l'icône */
+    color: #007bff; /* Couleur de l'icône */
+    font-size: 20px; /* Taille de l'icône */
+}
+
+/* Styles pour la table des infractions */
+.infractions-table {
+    width: 80%; /* Largeur de la table pour occuper 80% de la page */
+    margin: 30px auto; /* Centrer la table horizontalement */
+    border-collapse: collapse; /* Suppression des espaces entre les bordures */
+}
+
+.infractions-table th,
+.infractions-table td {
+    padding: 12px; /* Espacement interne pour chaque cellule */
+    border: 1px solid #ccc; /* Bordure pour les cellules */
+    text-align: left; /* Texte aligné à gauche */
+}
+
+.infractions-table th {
+    background-color: #00796b; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    font-weight: bold; /* Texte en gras */
+}
+
+.table-header-cell {
+    color: black; /* Couleur bleue pour les cellules d'en-tête */
+}

@@ -1,0 +1,118 @@
+.container {
+  margin: 150px auto;
+  max-width: 900px;
+}
+
+.product-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+/* Bouton Ajouter */
+button[type="submit"] {
+  background-color: #005f7f;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Boutons dans le tableau */
+.pv-list button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Bouton Lire (dans le tableau) */
+.pv-list button:nth-child(1) {
+  background-color:#005f7f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Bouton Modifier (dans le tableau) */
+.pv-list button:nth-child(2) {
+  background-color: #005f7f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Bouton Supprimer (dans le tableau) */
+.pv-list button:nth-child(3) {
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Optionnel: effet de survol pour tous les boutons */
+.pv-list button:hover {
+  opacity: 0.8;
+}
+
+/* Optionnel: effet de survol */
+.pv-list button:hover {
+  opacity: 0.8;
+}
+
+/* Bouton Ajouter */
+button[type="submit"] {
+  background-color: #005f7f;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Boutons dans le tableau */
+.pv-list button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Bouton Modifier (dans le tableau) */
+.pv-list button:nth-child(2) {
+  background-color: blue;
+  color: white;
+}
+
+/* Bouton Supprimer (dans le tableau) */
+.pv-list button:nth-child(3) {
+  background-color: red;
+  color: white;
+}
+
+/* Optionnel: effet de survol */
+.pv-list button:hover {
+  opacity: 0.8;
+}
+
+
+.pv-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pv-list th, .pv-list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.pv-list tr:hover {
+  background-color: #f1f1f1;
+}

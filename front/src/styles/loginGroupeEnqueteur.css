@@ -1,0 +1,127 @@
+/* Conteneur principal */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Fond doux */
+  }
+  
+  /* Boîte de connexion */
+  .login-box {
+    width: 100%;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+  }
+  
+  /* Champs input et select */
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+  
+  /* Boutons */
+  button, .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Messages d'erreur */
+  .error-message {
+    color: red;
+    margin-bottom: 12px;
+  }
+  
+  /* Fenêtre modale */
+  .dialog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0; /* Remplace top, right, bottom, left */
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .dialog-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles pour les titres et labels */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Focus et transition pour les champs input et select */
+  .input-group input,
+  .input-group select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Styles pour le select */
+  .input-group select {
+    appearance: none;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.5 6.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0V7H5v6a.5.5 0 0 1-1 0v-7z"/></svg>') no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    cursor: pointer;
+  }
+  
+  /* Groupe mot de passe */
+  .password-group {
+    position: relative;
+  }
+  
+  /* Icône de bascule mot de passe */
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  

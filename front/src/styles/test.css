@@ -1,0 +1,315 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* =============== Globals ============== */
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2a2185;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+  --green: #36d436;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--black1); /* Couleur de texte par défaut */
+  background-color: var(--gray); /* Fond uniforme */
+}
+
+/* =============== Header ================ */
+header {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  width: 70px; /* Augmentation de la largeur du logo */
+  transition: transform 0.3s; /* Transition pour l'animation */
+}
+
+header .logo:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+
+.log {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.log span {
+  margin-left: 8px; /* Espacement entre le logo et le texte */
+  font-size: 20px;
+  color: var(--green); /* Couleur verte pour le texte 'CHRD' */
+  font-weight: 600;
+}
+
+/* Ajout d'une classe pour l'agrandissement au survol des span */
+.span-hover {
+  display: inline-block; /* Nécessaire pour que la transformation fonctionne correctement */
+  transition: transform 0.3s ease; /* Transition pour un agrandissement fluide */
+}
+
+.span-hover:hover {
+  transform: scale(1.2); /* Agrandissement au survol */
+}
+
+/* Champ de recherche */
+.recherche {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f0f5ff;
+  padding: 2px 15px;
+}
+
+.recherche input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 15px;
+  color: var(--black1); /* Couleur du texte de recherche */
+}
+
+.recherche input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Section d'information utilisateur */
+.myacc {
+  display: flex;
+  align-items: center;
+  color: var(--black1); /* Couleur par défaut du texte */
+}
+
+.myacc .userImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--black1);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.myacc .userImage .rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.Information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.logos {
+  width: 100px; /* Augmentation de la taille du logo ici */
+  height: 100px; /* Ajustement proportionnel de la hauteur */
+  border: 1px solid var(--white);
+  border-radius: 100%;
+  transition: transform 0.3s; /* Ajout de transition pour l'animation */
+}
+
+.logos:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+
+.myacc .userImage .rounded-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--blue); /* Contour bleu autour de l'image */
+}
+
+.AcceDonne .userInfo {
+  padding-left: 10px;
+}
+
+.AcceDonne .userInfo h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--black1); /* Couleur noire pour le nom */
+}
+
+.AcceDonne .userInfo p {
+  margin-top: 0;
+  font-size: 12px;
+  color: var(--black2); /* Couleur grise pour l'email */
+  opacity: 0.8; /* Légère opacité pour la lisibilité */
+}
+
+/* =============== Navigation ================ */
+.navigation {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: var(--blue);
+  border-left: 10px solid var(--blue);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation.active {
+  width: 70px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+.navigation ul li .link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: var(--white); /* Couleur des liens par défaut */
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.navigation ul li:hover .link,
+.navigation ul li.hovered .link {
+  color: var(--blue); /* Couleur au survol */
+}
+
+.navigation ul li .icon {
+  min-width: 30px;
+  height: 30px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.navigation ul li .icon svg {
+  font-size: 18px;
+}
+
+.navigation ul li .title {
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+/* Courbes extérieures */
+.navigation ul li:hover .link::before,
+.navigation ul li.hovered .link::before,
+.navigation ul li:hover .link::after,
+.navigation ul li.hovered .link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.navigation ul li:hover .link::before {
+  top: -50px;
+  box-shadow: 35px 35px 0 10px var(--white);
+}
+
+.navigation ul li:hover .link::after {
+  bottom: -50px;
+  box-shadow: 35px -35px 0 10px var(--white);
+}
+
+/* ====== Contenu principal ====== */
+.content {
+  margin-left: 250px; /* Espace réservé pour la navigation */
+  padding: 20px;
+  width: calc(100% - 250px); /* Ajuste la largeur en fonction de la navigation */
+  height: 100%;
+  flex: 1; /* Prend tout l'espace restant */
+  transition: margin-left 0.5s; /* Transition lisse si la nav se réduit */
+  color: var(--black1);
+  display: flex;
+  align-items: center;
+}
+
+/* Compense lorsque navigation est active */
+.navigation.active ~ .content {
+  margin-left: 70px;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+  .navigation {
+    width: 200px; /* Largeur de la navigation sur petits écrans */
+  }
+
+  .navigation.active {
+    width: 60px; /* Largeur de la navigation réduite sur petits écrans */
+  }
+
+  .content {
+    margin-left: 200px; /* Espace réservé pour la navigation sur petits écrans */
+    width: calc(100% - 200px); /* Ajuste la largeur du contenu */
+  }
+
+  .recherche {
+    width: 100%; /* Champ de recherche prend toute la largeur */
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    width: 100%; /* Navigation occupe toute la largeur sur très petits écrans */
+    height: auto; /* Laisse la hauteur s'ajuster */
+    position: relative; /* Rendre la navigation relative */
+  }
+
+  .content {
+    margin-left: 0; /* Aucune marge pour le contenu */
+    width: 100%; /* Prend toute la largeur */
+  }
+
+  .myacc {
+    flex-direction: column; /* Colonne sur petits écrans */
+    align-items: flex-start; /* Alignement à gauche */
+  }
+}

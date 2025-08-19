@@ -1,0 +1,19 @@
+/* Ajout de la marge supérieure à la sidebar */
+#default-sidebar {
+    margin-top: 0px; /* Ajustez cette valeur selon vos besoins */
+  }
+  
+  /* Optionnel : Si vous souhaitez appliquer des styles supplémentaires */
+  #default-sidebar .h-full {
+    padding-top: 20px; /* Peut être ajusté si vous souhaitez également espacer le contenu à l'intérieur */
+  }
+  
+  /* Styles pour la sidebar en mode sombre */
+  #default-sidebar .dark\:bg-gray-800 {
+    background-color:#004080;; /* Vous pouvez ajuster la couleur de fond en mode sombre */
+  }
+  
+  #default-sidebar .dark\:hover\:bg-gray-700:hover {
+    background-color: white; /* Applique un fond plus sombre au survol en mode sombre */
+  }
+  
