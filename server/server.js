@@ -5,7 +5,7 @@ import pvUniqueRouters from './Controller/pvUniqueController.js'; // Chemin corr
 import pvSeparableRouters from './Controller/pvSeparableController.js'; // Chemin corrigé
 import pvJudiciaireRouters from './Controller/pvJudiciaireController.js';
 import pvArchiveRouter from './Controller/pvArchiveController.js';
-import enqueteurRouter from './Controller/EnqueteurController.js';  // Chemin correct vers enqueteurRouters.js
+import enqueteurRouter from './Controller/enqueteurController.js';  // Chemin correct vers enqueteurRouters.js
 import groupeEnqueteurRouter from './Controller/groupeEnqueteurController.js';
 import statistiquesRouters from './Controller/statistiquesController.js';  // Assurez-vous que le chemin est correct
 
@@ -30,4 +30,5 @@ app.use('/statistiques', statistiquesRouters);  // Changer le chemin pour les st
 // Démarrer le serveur
 app.listen(8081, () => {
     console.log('Serveur démarré sur le port 8081');
+
 });
