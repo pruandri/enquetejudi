@@ -5,7 +5,7 @@ services:
     image: postgres:17
     container_name: postgresql17_v7
     environment:
-      POSTGRES_USER: prudence
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: prudence
       POSTGRES_DB: enquetejudiciaire
     ports:
